@@ -1,0 +1,5 @@
+extends layout
+
+block content
+  video#hlsembplay.zoomed(controls, autoplay=auto, data-src=src)
+  script(type='text/javascript', src='/javascripts/hlsembplayer.js')

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  iframe(src='/hlsembplay?src=http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8&autoplay')
+  h2 API call examples:
+  h3 Playing a m3u8 file.
+  a(href='/hlsembplay?src=http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8&autoplay') /hlsembplay?src=http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8&autoplay
+  h3 Getting the embed code of a m3u8 file:
+  a(href='/hlsembplay/embed?src=http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8&autoplay') /hlsembplay/embed?src=http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8
+  
