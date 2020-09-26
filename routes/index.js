@@ -11,7 +11,7 @@ router.get('/hlsembplay', function(req, res, next) {
 	if ( req.query.hasOwnProperty("autoplay") ) {
 		autoplay = true;
 	}
-    res.render('play', { title: 'HLS Embplayer',  src: req.query.src, auto: autoplay });
+    res.render('play', { title: 'HLS Embplayer',  pro: req.query.src, auto: autoplay });
 });
 
 router.get('/hlsembplay/embed', function(req, res, next) {
